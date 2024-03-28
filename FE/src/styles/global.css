@@ -1,0 +1,55 @@
+.white-bg{
+    background-color: white !important;
+    padding: 5px 10px;
+    border-radius: 4px;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    border: none;
+}
+.disabled {
+    outline: 0 !important;
+    cursor: not-allowed !important;
+    pointer-events: auto !important;
+}
+
+.datePicker .dp__disabled {
+    background: none;
+    border: none;
+  }
+
+  .datePicker .dp__input , .meetingTimePicker .dp__input{
+    border: none;
+    height: 24px;
+    font-size: 14px;
+  }
+
+  .mt-60{
+    margin-top: 60px;
+  }
+
+  .ellipsis{
+    text-overflow: ellipsis; 
+    white-space: nowrap;
+    overflow:hidden;
+  }
+
+  .cursor-pointer {
+    cursor: pointer;
+  }
+
+  .text-gray{
+    color: gray;
+  }
+
+  .orange-color{
+    color: #fc7643;
+  }
+
+  input:-webkit-autofill { 
+    -webkit-box-shadow:0 0 0px 1000px white inset;
+    -webkit-text-fill-color: #333; 
+  } 
+
+  .invalid{
+    border: 1px dashed red;
+  }
