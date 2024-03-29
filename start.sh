@@ -2,8 +2,11 @@
 
 cd ./BE
 npm install
-npm start 
+cd ..
 
-cd ../FE
+cd ./FE
 npm install
-npm run serve
+cd ..
+
+npm install
+npm run start-all
