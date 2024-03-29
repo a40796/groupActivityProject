@@ -6,7 +6,7 @@
     "start": "nodemon ./BE/bin/www",
     "start-fe": "cd FE && npm run serve",
     "start-be": "cd BE && npm start",
-    "start-all": "concurrently \"npm run start-fe\" \"npm run start-be\""
+    "start-all": "concurrently  \"npm run start-be\" \"npm run start-fe\""
   },
   "devDependencies": {
     "concurrently": "^7.0.0"
