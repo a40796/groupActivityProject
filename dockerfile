@@ -7,7 +7,7 @@ COPY package.json /home/app
 
 WORKDIR /home/app
 
-EXPOSE 8080
+EXPOSE 8081
 
 RUN chmod +x /home/app/start.sh
 
