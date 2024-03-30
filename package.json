@@ -4,7 +4,7 @@
   "private": true,
   "scripts": {
     "start": "nodemon ./BE/bin/www",
-    "start-fe": "cd FE && npm run serve",
+    "start-fe": "cd FE && npm run build",
     "start-be": "cd BE && npm start",
     "start-all": "concurrently  \"npm run start-be\" \"npm run start-fe\""
   },
