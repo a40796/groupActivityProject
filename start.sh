@@ -8,5 +8,6 @@ cd ./FE
 npm install
 cd ..
 
+npm init
 npm install
 npm run start-all
