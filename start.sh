@@ -1,13 +1,12 @@
 #!/bin/bash
 
-cd ./BE
-npm install
-cd ..
+# 啟動後端服務
+cd /home/app/BE
+npm start &
 
-cd ./FE
-npm install
-cd ..
+# 在另一個端口上提供前端應用
+cd /home/app/FE
+serve -s dist -l 8080 &
 
-npm init
-npm install
-npm run start-all
+# 等待後台任務結束（這將不會發生，除非有一個服務終止）
+wait
