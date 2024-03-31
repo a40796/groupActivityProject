@@ -1,6 +1,8 @@
+
+const baseUrl = "http://localhost:3000";
 export async function callApi(path, method = "GET", options = {}, store = undefined, Toast = undefined) {
   try {
-    const response = await fetch(`http://localhost:3000${path}`, {
+    const response = await fetch(`${baseUrl}${path}`, {
       method,
       credentials: "include",
       ...options,
