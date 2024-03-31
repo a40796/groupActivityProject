@@ -2,7 +2,7 @@
 
 # 啟動後端服務
 cd /home/app/BE
-npm start &
+PORT=3000 npm start &
 
 # 在另一個端口上提供前端應用
 cd /home/app/FE
