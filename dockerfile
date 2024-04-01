@@ -1,17 +1,14 @@
-FROM node:18 as Builder
+FROM node:18
 
 COPY BE /home/app/BE
 COPY FE /home/app/FE
 COPY start.sh /home/app
+COPY package.json /home/app
 
 WORKDIR /home/app
 
-RUN npm install -g serve
+EXPOSE 3000
+
 RUN chmod +x /home/app/start.sh
 
-RUN cd /home/app/BE && npm install
-RUN cd /home/app/FE && npm install && npm run build
-
-EXPOSE 3000 8080
-
-CMD ["/bin/bash", "/home/app/start.sh"]
+CMD /home/app/start.sh && tail -f /dev/null
