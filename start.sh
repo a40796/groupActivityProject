@@ -9,4 +9,4 @@ npm install
 cd ..
 
 npm install
-npm run start-all
+npm run start-be
