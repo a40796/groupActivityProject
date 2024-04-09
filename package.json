@@ -4,7 +4,7 @@
   "private": true,
   "scripts": {
     "start": "nodemon ./BE/bin/www",
-    "start-fe": "cd FE && npm run build && serve dist",
+    "start-fe": "cd FE && npm run build && cd dist && http-server -S",
     "start-be": "cd BE && npm start",
     "start-all": "concurrently  \"npm run start-be\" \"npm run start-fe\""
   },
@@ -24,6 +24,7 @@
     "escalade": "^3.1.2",
     "get-caller-file": "^2.0.5",
     "has-flag": "^4.0.0",
+    "http-server": "^14.1.1",
     "is-fullwidth-code-point": "^3.0.0",
     "lodash": "^4.17.21",
     "regenerator-runtime": "^0.14.1",
