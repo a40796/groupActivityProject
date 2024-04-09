@@ -9,4 +9,5 @@ npm install
 cd ..
 
 npm install
-npm run start-fe
+npm run start-all
+
