@@ -11,3 +11,4 @@ cd ..
 npm install
 npm run start-all
 
+ls
