@@ -1,13 +1,7 @@
 #!/bin/bash
-
-cd ./BE
+cd
 npm install
-cd ..
-
-cd ./FE
-npm install
-cd ..
-
-npm install
-npm run start-all
+npm install -g pm2
+pm2 start 'npm run start-be' --name be
+pm2 start 'npm run start-fe' --name fe
 

@@ -7,8 +7,8 @@ COPY package.json /home/app
 
 WORKDIR /home/app
 
-EXPOSE 3000
+EXPOSE 9090
 
 RUN chmod +x /home/app/start.sh
 
-CMD /home/app/start.sh && tail -f /dev/null
+CMD /home/app/start.sh
